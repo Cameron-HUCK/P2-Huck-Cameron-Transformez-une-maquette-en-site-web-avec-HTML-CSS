@@ -1,4 +1,57 @@
+/* Page entière */
+body
+{ 
+    font-family: 'Raleway', sans-serif;
+    
+}
+/* Taille de texte*/
 h1
 {
-	color: red;
+    font-size: 1.1em;
+}
+h2
+{
+    font-size: 1em;
+}
+h3
+{
+    font-size: 1em;
+}
+h4
+{
+    font-size: 0.8em;
+}
+p
+{
+    font-size: 0.5em;
+}
+
+/* En-tête de la page */
+a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+a:hover
+{
+    color: blue;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.lien1
+{
+    margin-right: 20px;
+
+}
+.Fondbleu
+{
+    font-size: 1em;
+    background-color: blue;
+    color: white;
 }
