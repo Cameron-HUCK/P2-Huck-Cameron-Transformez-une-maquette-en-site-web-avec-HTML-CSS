@@ -2,9 +2,48 @@
 body
 { 
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    
-    
+    font-size: 18px;
+}
+/* Regle CSS flex */
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-around
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-between
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexcolumncentre
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flexcolumn-between
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.padding-l
+{
+    padding-left: 30px;
+}
+.padding-r
+{
+    padding-right: 20px;
 }
 /* Taille de texte*/
 h1
@@ -19,40 +58,32 @@ h3
 {
     font-size: 0.8em;
 }
-
 p
 {
-    font-size: 0.5em;
+    font-size: 0.6em;
     font-weight: 500;
 }
-
 /* En-tête de la page */
 a
 {
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.5em;
+    font-size: 0.6em;
 }
 nav
 {
     display: flex;
     justify-content: space-between;
+    height: 50px;
 }
-
-.lienflexcentre
+.liensize-nav
 {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
     width: 30%;
     height: 100px;
-    
 }
-
 .lien1
 {
     color: #0065FC;
-    
 }
 .liennav
 {
@@ -69,51 +100,41 @@ nav
 /* Zone de recherche*/
 .boutonsearch
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 400px;
     font-size: 0.8em;
     border-radius: 10px;
 }
 .iconesearch
 { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 50px;
     height: 50px;
     background-color: rgb(187,181,184,0.3);
     color: black;
+    border-radius: 10px 0 0px 10px;
 }
 .zonederecherche
 {
-    display: flex;
-    justify-content: left;
-    align-items: center;
     height: 50px;
     width: 230px;
     font-size: 18px;
     color: black;
     font-weight: bold;
-    
+    border: 1px solid #F2F2F2;
 }
 input
 {
     border: 1px solid black;
     height: 50px;
+    width: 100%;
     border-style: none;
 }
+
 .fondbleu
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #0065FC;
     color: white;
     padding-left: 20px;
     border-radius: 0px 10px 10px 0px;
-    font-size: 18px;
     padding-right: 20px;
     height: 50px;
     cursor: pointer;
@@ -124,58 +145,22 @@ input
 {
     display: flex;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 100px;
-    font-weight: bold;
-    
+    font-weight: bold; 
 }
-
 .lesfiltres2
 {
     display: flex;
     height: 50px;
-    
-
 }
-.economie
+.fixe-filtre
 {
-    display: flex;
-    align-items: center;
     border: 1px solid #F2F2F2;
     border-radius: 30px;
     height: 50px;
     padding-right: 20px;
-
-}
-.famille
-{
-    display: flex;
-    align-items: center;
-    border: 1px solid #F2F2F2;
-    border-radius: 30px;
-    height: 50px;
-    padding-right: 20px;
-  
-}
-.amour
-{
-    display: flex;
-    align-items: center;
-    border: 1px solid #F2F2F2;
-    border-radius: 30px;
-    height: 50px;  
-    padding-right: 20px;
-}
-.nature
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #F2F2F2;
-    border-radius: 30px;
-    height: 50px;
-    padding-right: 20px; 
 }
 strong
 {
@@ -185,21 +170,22 @@ span
 {
     margin-right: 20px;
 }
+.padding-filtre
+{
+    padding-left: 10px;
+}
+.lesfiltres2:hover
+{
+    color: #0065FC;
+}
 .filtreicone
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 25px;
     width: 50px;
     height: 50px;
     color: #0065FC;
     border: 1px solid #F2F2F2;
     background-color: #deebff;
-}
-.lesfiltres2:hover
-{
-    color: #0065FC;
 }
 .filtreicone:hover{
     background-color: #0065FC;
@@ -211,12 +197,10 @@ span
 {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
  .iconeparent
  {
-    display: center;
-    justify-content: center;
-    align-items: center;
     width: 30px;
     height: 30px;
     border: 2px solid #F2F2F2;
@@ -224,12 +208,7 @@ span
     margin-right: 10px;
     color: #0065FC;
  }
- .iconeinfo
- {
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+
                 /* Fin de l'en-tete*/
 
                     /* SECTION */
@@ -238,134 +217,90 @@ span
 .bloc1
 {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    
-    
-    
+    justify-content: space-between;
 }
-.hebergement-fond-gris
+.flex-texte
 {
-    margin-right: 25%;
+    width: 90%;
+}
+.flex-texte2
+{
+    width: 60%;
+    padding-left: 5%;
+}
+.textepop-place
+{
+    height: 140px;
+}
+.hebergement-fond-gris1
+{
     background-color: #F2F2F2;
     border-radius: 10px;
-    
+    width: 63%;
+}
+.hebergement-fond-gris2
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    width: 33%;
 }
 .cadreheberg
 {
   flex: 1;
-  margin-right: 20px;
-  
 }
-.misendispo
+.text-gras
 {
-    display: flex;
-    justify-content: space-around;
-   
+    margin-top: auto;
+    font-size: 0.8em;
+    font-weight: bold;
 }
-.misendispo2
+.color-bleu
 {
-    display: flex;
-    justify-content: space-around;
+    color: #0065FC
 }
-.cannebiere
+.color-gris
 {
-    
+    color: #F2F2F2;
 }
 
-/* les plus populaires populaires */
+/* les plus populaires */
 
 .cadrepopulaire
 {
     flex: 2;
-    margin-right: 20px;
 }
-
-                    /* les formats images */
-
+.flex-populaire
+{
+   display: flex;
+   align-items: center;
+}
+            /* les Formats images */
 /* images hebergement */
-
-.photocannebiere
+.photo-hebergement
 {
     width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-position: center;
-}
-.photoport
-{
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.photomouettes
-{
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-.photomer
-{
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.photopanier
-{
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-
-.photoamina
-{
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-    background-size: cover;
-    background-position: center;
-}
-.logopopulaire
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* images les plus populaires */
-.photosoleil
-{
-    width: 35%;
     height: 160px;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 15px 0 0;
+    background-size: cover;
+    background-position: center;
 }
-.photohotes
-{
-    width: 35%;
-    height: 130px;
-    border-radius: 15px 0px 0px 15px;
-}
-.phototoutbleu
-{
-    width: 35%;
-    height: 160px;
-    border-radius: 15px 0px 0px 15px;
-}
-.fondblanc
+.fond-blanc
 {
     background-color: white;
     margin: 25px;
     border-radius: 10px;
+    padding: 5px;
+}
+.size-bloc-hebergement
+{
+    width: 30%;
+}
+/* images les plus populaires */
+.photo-populaire
+{
+    width: 35%;
+    height: 180px;
+    border-radius: 15px 0px 0px 15px;
 }
                 /* Activites a Marseille */
 /* reglage general*/
@@ -374,119 +309,110 @@ span
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
-.flexactivite
+.bloc-activite
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
-    height: 600px;
-    border: 1px solid blue;
+    height: 450px;
 }
-.flexcolumn
+.hauteur-titre
 {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    padding-left: 10px;
+    width: 95%;
 }
-/* reglage image*/
-.vieux
+
+/* Carte */
+
+/*  Grande carte */
+.grandphoto-activite
 {
     box-shadow: 5px 5px 5px 1px #F2F2F2;
     border-radius: 15px;
     width: 23%;
-    height: 530px;
-    
+    height: 450px;
 }
-.photovieux
-{
-    background-position: center;
-    border-radius: 15px 15px 0 0;
-    width: 100%;
-}
-
-.fort
-{
-    box-shadow: 5px 5px 5px 1px #F2F2F2;
-    border-radius: 15px;
-    width: 23%;
-}
-.photofort
+.grandposition-activite
 {
     background-position: center;
     background-size: cover;
     border-radius: 15px 15px 0 0;
     width: 100%;
+    height: 400px;
 }
-
-.toile
+/* Deux premieres petite carte*/
+.petitphoto-activite1
 {
     box-shadow: 5px 5px 5px 1px #F2F2F2;
     border-radius: 15px;
-    width: 23%;
+    width: 100%;
 }
-.photoiles
+.petitphoto-activite2
+{
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    border-radius: 15px;
+    width: 100%;
+}
+.bloc-adapte-petit
+{
+    width: 23%;
+    height: 450px;
+}
+.petitposition-activite1
 {
     background-position: center;
     background-size: cover;
     border-radius: 15px 15px 0 0;
     width: 100%;
-    
+    height: 180px;
 }
-
-.parc
-{
-    box-shadow: 5px 5px 5px 1px #F2F2F2;
-    border-radius: 15px;
-    height: 530px;
-}
-.photoparc
+.petitposition-activite2
 {
     background-position: center;
     background-size: cover;
     border-radius: 15px 15px 0 0;
     width: 100%;
+    height: 130px;
 }
-.dame
+/* Les deux dernieres petites cartes */
+.petitphoto-activite3
 {
     box-shadow: 5px 5px 5px 1px #F2F2F2;
     border-radius: 15px;
-    width: 23%;
+    width: 100%;
 }
-.photonotredame
+.petitphoto-activite4
+{
+    box-shadow: 5px 5px 5px 1px #F2F2F2;
+    border-radius: 15px;
+    width: 100%;
+}
+.bloc-adapte-petit
+{
+    width: 23%;
+    height: 450px;
+}
+.petitposition-activite3
 {
     background-position: center;
     background-size: cover;
     border-radius: 15px 15px 0 0;
     width: 100%;
+    height: 140px;
 }
-.champ
-{
-    box-shadow: 5px 5px 5px 1px #F2F2F2;
-    border-radius: 15px;
-    width: 23%;
-}
-.photolongchamp
+.petitposition-activite4
 {
     background-position: center;
     background-size: cover;
     border-radius: 15px 15px 0 0;
-    width: 100%;  
+    width: 100%;
+    height: 170px;
 }
-
 /* Pied de la page*/
 footer
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-radius: 10px;
-    padding-bottom: 50px;
     background-color: #F2F2F2;
-    height: 300px;
+    height: 185px;
     margin-top: 100px;
-    
 }
 .propos
 {
