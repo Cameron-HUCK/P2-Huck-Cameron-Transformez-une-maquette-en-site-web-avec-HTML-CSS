@@ -3,6 +3,8 @@ body
 { 
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 /* Regle CSS flex */
 .flex-center
@@ -78,7 +80,8 @@ nav
 }
 .liensize-nav
 {
-    width: 30%;
+    display: flex;
+    justify-content: left;
     height: 100px;
 }
 .lien1
