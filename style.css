@@ -3,8 +3,6 @@ body
 { 
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    padding-right: 50px;
-    padding-left: 50px;
 }
 /* Regle CSS flex */
 .flex-center
@@ -217,7 +215,7 @@ span
                     /* SECTION */
 
 /* Hebergement a marseille */
-.bloc1
+#bloc1
 {
     display: flex;
     justify-content: space-between;
@@ -307,7 +305,7 @@ span
 }
                 /* Activites a Marseille */
 /* reglage general*/
-.bloc2
+#bloc2
 {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -416,6 +414,7 @@ footer
     background-color: #F2F2F2;
     height: 185px;
     margin-top: 100px;
+    width: auto;
 }
 .propos
 {
