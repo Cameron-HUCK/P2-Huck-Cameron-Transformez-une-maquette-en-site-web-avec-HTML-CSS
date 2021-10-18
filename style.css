@@ -414,7 +414,6 @@ footer
     background-color: #F2F2F2;
     height: 185px;
     margin-top: 100px;
-    width: auto;
 }
 .propos
 {
@@ -434,3 +433,86 @@ footer
 {
     height: 30px;
 }
+
+/* Responsive tablette */
+
+@media screen and (max-width: 768px)
+{
+    body
+    {
+        align-items: center;
+    }
+/* L'en-tete*/
+    nav
+    {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 50px;
+        
+    }
+    .image-logo
+    {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .liennav
+    {
+        align-items: center;
+    }
+/* Filtres */
+    .lesfiltres
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .lesfiltres2
+    {
+        margin: auto;
+    }
+/* Section Hebergement/Populaire */
+    #bloc1
+    {
+        flex-direction: column-reverse;
+    }
+    .hebergement-fond-gris1
+    {
+        background-color: white;
+        width: auto;
+    }
+    .hebergement-fond-gris2
+    {
+        width: auto;
+        border-radius: 0px;
+    }
+    .flex-around
+    {
+        flex-direction: column;
+        width: auto;
+    }
+    .size-bloc-hebergement
+    {
+        width: 90%;
+        height: auto;
+        box-shadow: 5px 5px 5px 1px #F2F2F2;
+    }
+/* Activites a Marseille */
+    .bloc-activite
+    {
+        flex-direction: column;
+    }
+    .grandphoto-activite
+    {
+        width: 100%;
+    }
+    .bloc-adapte-petit
+    {
+        width: 100%;
+    }
+/* le footer */
+    footer
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+} 
