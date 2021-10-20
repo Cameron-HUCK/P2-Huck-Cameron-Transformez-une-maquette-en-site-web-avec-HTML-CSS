@@ -150,6 +150,10 @@ input
     margin-bottom: 20px;
     font-weight: bold; 
 }
+.block-filtre
+{
+    display: inline-block;
+}
 .lesfiltres2
 {
     display: block;
@@ -157,7 +161,6 @@ input
 }
 .fixe-filtre
 {
-    display: inline-block;
     border: 1px solid #F2F2F2;
     border-radius: 30px;
     padding-right: 20px;
@@ -417,15 +420,15 @@ footer
 .propos
 {
     
-    margin-left: 5px;
+    
 }
 .hebergemento
 {
-    
+    margin-right: 15px;
 }
 .assiste
 {
-    margin-right: 15%;
+    margin-right: 60px;
     
 }
 .espace
@@ -512,6 +515,9 @@ footer
     footer
     {
         flex-direction: column;
-        align-items: flex-start;
+    }
+    .block-footer
+    {
+        
     }
 } 
