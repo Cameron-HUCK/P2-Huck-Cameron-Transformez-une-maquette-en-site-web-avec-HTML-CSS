@@ -621,7 +621,7 @@ footer
     .bloc-adapte-petit
     {
         width: 23%;
-        height: 440px;
+        height: 450px;
     }
 } 
 @media screen and (max-width: 915px)
