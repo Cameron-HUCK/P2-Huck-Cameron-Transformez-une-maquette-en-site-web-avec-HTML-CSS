@@ -2,8 +2,7 @@
 body
 { 
     font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    padding: 0px 20px 35px 25px;
+    font-size: 14px;
 }
 
 /* Regle CSS flex */
@@ -61,26 +60,28 @@ body
 /* Taille de texte*/
 h1
 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 h2
 {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 h3
 {
-    font-size: 17px;
+    font-size: 15px;
     color: black;
     font-weight: 900;
+    margin: 5px 0px 10px 0px;
 }
 
 p
 {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 500;
     color: black;
+    margin: 10px 0px 10px 0px;
 }
 
 a
@@ -94,6 +95,7 @@ nav
 {
     display: flex;
     justify-content: space-between;
+    padding: 0px 20px 0px 20px;
 }
 
 .liensize-nav
@@ -124,6 +126,10 @@ nav
                 /* En-dessous-de-l-en-tete*/
 
 /* Zone de recherche*/
+header
+{
+    padding: 0px 20px 0px 20px;
+}
 .boutonsearch
 {
     border-radius: 10px;
@@ -262,14 +268,13 @@ span
 {
     display: flex;
     justify-content: space-between;
+    padding: 0px 20px 0px 20px;
 }
 
 .flex-texte
 {
     padding-left: 10px;
     line-height: 13px;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 .flex-texte2
@@ -299,7 +304,7 @@ span
 
 .text-gras
 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 .color-bleu
@@ -331,6 +336,12 @@ span
     white-space: nowrap;
     font-size: smaller;
 }
+.ligne-etoilepop
+{
+    white-space: nowrap;
+    font-size: smaller;
+}
+
 
 
             /* les Formats images */
@@ -380,12 +391,13 @@ span
 }
 .textepop-place
 {
-    width: auto;
+    padding-bottom: 15px;
+    width: 92%;
 }
 
 .marg-pop
 {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
                 /* Activites a Marseille */
@@ -394,6 +406,7 @@ span
 {
     margin-top: 50px;
     margin-bottom: 50px;
+    padding: 0px 20px 0px 20px;
 }
 
 .bloc-activite
@@ -406,6 +419,7 @@ span
 {
     padding-left: 10px;
     width: 95%;
+    margin: 10px 0px 10px 0px;
 }
 
 /* CARTE */
@@ -426,12 +440,20 @@ span
     object-fit: cover;
     object-position: center;
 }
+.grandposition-activite2
+{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
 
 /* Deux premieres petite carte*/
 .bloc-adapte-petit
 {
     width: 23%;
-    height: 460px;
+    height: 440px;
 }
 
 .petitphoto-activite1
@@ -502,23 +524,120 @@ span
 /* Pied de la page*/
 footer
 {
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    height: 175px;
+}
+.text-footer
+{
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
-    background-color: #F2F2F2; 
+    padding-top:35px;
 }
-
-.hebergemento
+.propos
 {
-    margin-right: 15px;
+    padding-left: 30px;
 }
 
 .assiste
 {
-    margin-right: 60px;
+    padding-right: 215px;
 }
 
+
 /* Responsive tablette */
+@media screen and (max-width: 992px)
+{
+/* Taille de Police */
+    h3
+    {
+        font-size: 14px;
+        margin: 10px 0px 10px 0px;
+    }
+    p
+    {
+        font-size: 12px;
+    }
+ /* Les filtres */
+    .block-filtre
+    {
+        margin: 5px 10px 0px 0;
+    }
+    .padding-l
+    {
+        align-items: baseline;
+    }
+    .lesfiltres2
+    {
+        width: 64%;
+    }
+    
+/* Les herbergements */
+    .marg-heberg2
+    {
+        height: 230px;
+        margin: 20px 0px 30px 0px;
+    }
+    .fond-blanc
+    {
+        height: 225px;
+    }
+    .text-gras
+    {
+        font-size: 14px;
+    }
+/* les plus populaires */
+    .flex-populaire
+    {
+       height: 140px;
+    }
+    .textepop-place
+    {
+        width: 100%;
+        padding: 0;
+    }
+    .flex-texte2
+    {
+        padding-left: 10px;
+    }
+/* Activites a marseille */
+        
+    .grandposition-activite
+    {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .grandposition-activite2
+    {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }   
+    .bloc-adapte-petit
+    {
+        width: 23%;
+        height: 440px;
+    }
+} 
+@media screen and (max-width: 915px)
+{
+        .grandposition-activite2
+    {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+        object-position: center;
+    }  
+  
+}
+
+/* Responsive Mobile */
 
 @media screen and (max-width: 768px)
 {
@@ -532,7 +651,8 @@ footer
     nav
     {
         flex-direction: column;
-        margin-bottom: 40px;   
+        margin-bottom: 40px;
+        padding: 0;   
     }
     .center-logo
     {
@@ -587,6 +707,10 @@ footer
         
     }
 /* Icone barre de recherche */
+    header
+    {
+        padding: 0;
+    }
     .boutonsearch
     {
         padding: 0px 10px 10px 15px;
@@ -624,14 +748,23 @@ footer
     {
         padding: 0 0 10px 5px;
     }
+    .lesfiltres2
+    {
+        width: 100%;
+    }
 /* Section Hebergement/Populaire */
     #bloc1
     {
         flex-direction: column-reverse;
+        padding: 0;
     }
     .flex-texte
     {
         line-height: 10px;
+    }
+    .flex-texte2
+    {
+        padding-left: 20px;
     }
     .cadreheberg
     {
@@ -661,15 +794,20 @@ footer
     .marg-heberg2
     {
         margin: 0px;
+        height: auto;
     }
     .fond-blanc
     {
         margin-bottom: 10px;
     }
+    .text-gras
+    {
+        padding-top: 15px;
+    }
 /* Populaire */
     .marg-pop
     {
-        margin-bottom: 10px;
+        margin: 10px;
     }
     .cadrepopulaire
     {
@@ -679,6 +817,7 @@ footer
     #bloc2
     {
         justify-content: space-around;
+        padding: 0;
     }
     .bloc-activite
     {
@@ -693,6 +832,7 @@ footer
     .titre-place
     {
         padding-left: 17px;
+        margin-bottom: 25px;
     }
 
 /* Grand photo */    
@@ -700,7 +840,17 @@ footer
     {
         height: 160px;
     }
+    .grandposition-activite2
+    {
+        height: 160px;
+    }
     .grandphoto-activite
+    {
+        width: 90%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .grandphoto-activite2
     {
         width: 90%;
         height: auto;
@@ -745,7 +895,6 @@ footer
     {
         width: 90%;
         height: auto;
-        margin-bottom: 30px;
     }
 
     .petitposition-activite4
@@ -756,7 +905,20 @@ footer
 /* le footer */
     footer
     {
-        flex-direction: column;
         padding-left: 30px;
+        height: 350px;
+    }
+    .text-footer
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+    .propos
+    {
+        padding: 20px 0 10px 0;
+    }
+    .assiste
+    {
+        padding: 20px 0 10px 0;
     }
 } 
