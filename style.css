@@ -102,7 +102,8 @@ nav
 {
     display: flex;
     justify-content: space-around;
-    width: 25%;
+    width: 20%;
+    text-align: center;
 }
 
 .image-logo
@@ -116,13 +117,27 @@ nav
 }
 .lien1
 {
-    color: #0065FC;
+    color: black;
+    border-top: 3px solid #F2F2F2;
+    padding-top: 20px;
+    width: 50%;
 }
 
 .lien2
 {
     color: black;
+    border-top: 3px solid #F2F2F2;
+    padding-top: 20px;
+    width: 50%;
+
 }
+.border-nav:hover
+{
+    border-top: 3px solid #0065FC ;
+    cursor: pointer;
+    color: #0065FC;
+}
+
                 /* En-dessous-de-l-en-tete*/
 
 /* Zone de recherche*/
@@ -130,15 +145,20 @@ header
 {
     padding: 0px 20px 0px 20px;
 }
+.titre-center
+{
+    line-height: 10px;
+}
 .boutonsearch
 {
     border-radius: 10px;
+    padding-top: 10px;
 }
 
 .iconesearch
 { 
     width: 40px;
-    height: 40px;
+    height: 42px;
     background-color: rgb(187,181,184,0.3);
     color: black;
     border-radius: 10px 0 0px 10px;
@@ -175,7 +195,7 @@ button
     color: white;
     padding-left: 20px;
     border-radius: 0px 10px 10px 0px;
-    height: 40px;
+    height: 42px;
     cursor: pointer;
     border: none;
     font-size: 15px;
@@ -306,6 +326,7 @@ span
 {
     font-size: 16px;
     font-weight: bold;
+    padding-left: 10px;
 }
 .color-bleu
 {
@@ -331,12 +352,21 @@ span
     display: flex;
     height: 135px;
 }
+.icone-pop
+{
+    padding-right: 10px;
+}
 .ligne-etoile
 {
     white-space: nowrap;
     font-size: smaller;
 }
 .ligne-etoilepop
+{
+    white-space: nowrap;
+    font-size: smaller;
+}
+.ligne-etoilepop2
 {
     white-space: nowrap;
     font-size: smaller;
@@ -375,11 +405,13 @@ span
     border-radius: 15px;
     padding: 5px;
     margin: 10px 10px 0px 15px;
+    box-shadow: 5px 5px 5px 5px #EDEDED;
 }
 
 .size-bloc-hebergement
 {
     width: 28%;
+    box-shadow: 5px 5px 5px 5px #EDEDED;
 }
 /* images les plus populaires */
 .photo-populaire
@@ -391,7 +423,6 @@ span
 }
 .textepop-place
 {
-    padding-bottom: 15px;
     width: 92%;
 }
 
@@ -404,8 +435,8 @@ span
 /* reglage general*/
 #bloc2
 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding: 0px 20px 0px 20px;
 }
 
@@ -524,7 +555,6 @@ span
 /* Pied de la page*/
 footer
 {
-    border-radius: 10px;
     background-color: #F2F2F2;
     height: 175px;
 }
@@ -549,6 +579,10 @@ footer
 @media screen and (max-width: 992px)
 {
 /* Taille de Police */
+    h2
+    {
+        font-size: 16px;
+    }
     h3
     {
         font-size: 14px;
@@ -558,15 +592,35 @@ footer
     {
         font-size: 12px;
     }
- /* Les filtres */
+/* lien nav*/
+    .liensize-nav
+    {
+        flex-direction: column;
+    }
+    .lien1
+    {
+        padding-top: 0;
+        border-top: none;
+        padding-right: 100px;
+    }
+    .lien2
+    {
+        padding-top: 0;
+        border: none;
+        padding-right: 100px;
+        text-align: initial;
+    }
+    .border-nav:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+/* Les filtres */
     .block-filtre
     {
         margin: 5px 10px 0px 0;
     }
-    .padding-l
-    {
-        align-items: baseline;
-    }
+    
     .lesfiltres2
     {
         width: 64%;
@@ -585,8 +639,13 @@ footer
     .text-gras
     {
         font-size: 14px;
+        padding-left: 10px;
     }
 /* les plus populaires */
+    .icone-pop
+    {
+        padding-right: 0;
+    }
     .flex-populaire
     {
        height: 140px;
@@ -621,16 +680,28 @@ footer
     .bloc-adapte-petit
     {
         width: 23%;
-        height: 450px;
+        height: 440px;
     }
 } 
 @media screen and (max-width: 915px)
 {
+/* adaptation nav */
+     .lien1
+     {
+         padding-right: 95px;
+         width: 50%;
+     }
+     .lien2
+     {
+         padding-right: 95px;
+         width: 50%;
+     }
+/* Activites Marseille */
         .grandposition-activite2
     {
         border-radius: 15px 15px 0 0;
         width: 100%;
-        height: 390px;
+        height: 385px;
         object-fit: cover;
         object-position: center;
     }  
@@ -646,7 +717,23 @@ footer
         align-items: center;
         padding: 0;
     }
-
+    .padding-l
+    {
+        padding-left: 20px;
+    }
+/* taille police */
+    h2
+    {
+        font-size: 18px;
+    }
+    h3
+    {
+        font-size: 16px;
+    }
+    p
+    {
+        font-size: 14px;
+    }
 /* L'en-tete*/
     nav
     {
@@ -670,6 +757,7 @@ footer
     }
     .liensize-nav
     {
+        flex-direction: initial;
         align-items: center;
         justify-content: space-around;
         text-align: center;
@@ -684,25 +772,33 @@ footer
         width: 50%;
         padding-bottom: 20px;
         align-items: center;
+        border-top: none;
         border-bottom: 5px solid #F2F2F2;
+        padding-right: 0;
     }
 
     .lien2
     {
         width: 50%;
         align-items: center;
+        border-top: none;
         border-bottom: 5px solid #F2F2F2;
-        padding-bottom: 20px;  
+        padding-bottom: 20px;
+        padding-right: 0;
+        text-align: center; 
     }
     .border-nav:hover
     {
+        border-top: none;
+        border-right: none;
         border-bottom: 5px solid #0065FC ;
         cursor: pointer;
         color: #0065FC;
     }
 /* Titre*/
-    .titre-center-mobile
+    .titre-center
     {
+        line-height: normal;
         padding: 0px 10px 10px 15px;
         
     }
@@ -713,11 +809,13 @@ footer
     }
     .boutonsearch
     {
-        padding: 0px 10px 10px 15px;
+        padding: 10px 0px 10px 20px;
     }
     .fondbleu
     {
         padding-right: 0;
+        width: 85%;
+        border-radius: 11px 11px 11px 11px;
     }
     .none-search
     {
@@ -802,9 +900,13 @@ footer
     }
     .text-gras
     {
-        padding-top: 15px;
+        padding: 15px 0 0 15px;
     }
 /* Populaire */
+    .icone-pop
+    {
+        padding-right: 20px;   
+    }
     .marg-pop
     {
         margin: 10px;
@@ -812,6 +914,18 @@ footer
     .cadrepopulaire
     {
         padding: 15px 0px 20px 0px;
+    }
+    .ligne-etoilepop
+    {
+        white-space: nowrap;
+        font-size: smaller;
+        padding-top: 50px;
+    }
+    .ligne-etoilepop2
+    {
+        white-space: nowrap;
+        font-size: smaller;
+        padding-top: 30px;
     }
 /* Activites a Marseille */
     #bloc2
@@ -831,10 +945,15 @@ footer
     }
     .titre-place
     {
-        padding-left: 17px;
+        padding-left: 20px;
         margin-bottom: 25px;
     }
-
+    .hauteur-titre
+    {
+        padding-left: 10px;
+        width: 95%;
+        margin: 15px 0px 15px 0px;
+    }
 /* Grand photo */    
     .grandposition-activite
     {
