@@ -3,6 +3,7 @@ body
 { 
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
+    margin: 0;
 }
 
 /* Regle CSS flex */
@@ -117,8 +118,8 @@ nav
 }
 .lien1
 {
-    color: black;
-    border-top: 3px solid #F2F2F2;
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
     padding-top: 20px;
     width: 50%;
 }
@@ -126,7 +127,7 @@ nav
 .lien2
 {
     color: black;
-    border-top: 3px solid #F2F2F2;
+    border-top: 3px solid white;
     padding-top: 20px;
     width: 50%;
 
@@ -144,6 +145,10 @@ nav
 header
 {
     padding: 0px 20px 0px 20px;
+}
+form
+{
+    display: flex;
 }
 .titre-center
 {
@@ -193,7 +198,7 @@ button
 {
     background-color: #0065FC;
     color: white;
-    padding-left: 20px;
+    padding: 20px;
     border-radius: 0px 10px 10px 0px;
     height: 42px;
     cursor: pointer;
@@ -228,11 +233,7 @@ button
     border-radius: 30px;
     padding-right: 20px;
     cursor: pointer;
-}
-
-span
-{
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 .padding-filtre
@@ -297,12 +298,6 @@ span
     line-height: 13px;
 }
 
-.flex-texte2
-{
-    padding-left: 20px;
-    overflow: hidden;
-}
-
 .hebergement-fond-gris1
 {
     background-color: #F2F2F2;
@@ -342,6 +337,18 @@ span
     width: auto;
 }
 /* les plus populaires */
+.fa-chart-line:before
+{
+    font-size: larger;
+}
+.flex-texte2
+{
+    padding-left: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .cadrepopulaire
 {
     flex: 2;
@@ -556,13 +563,12 @@ span
 footer
 {
     background-color: #F2F2F2;
-    height: 175px;
 }
 .text-footer
 {
     display: flex;
     justify-content: space-between;
-    padding-top:35px;
+    padding: 35px 35px 35px 0;
 }
 .propos
 {
@@ -596,23 +602,26 @@ footer
     .liensize-nav
     {
         flex-direction: column;
+        width: auto;
+        text-align: right;
     }
     .lien1
     {
         padding-top: 0;
         border-top: none;
-        padding-right: 100px;
+        width: 100%;
+        padding-right: 5px;
     }
     .lien2
     {
         padding-top: 0;
         border: none;
-        padding-right: 100px;
-        text-align: initial;
+        width: 100%;
+        padding-right: 5px;
     }
     .border-nav:hover
     {
-        border-bottom: 3px solid #0065FC;
+        border-right: 3px solid #0065FC;
         border-top: none;
     }
 /* Les filtres */
@@ -652,7 +661,7 @@ footer
     }
     .textepop-place
     {
-        width: 100%;
+        width: 99%;
         padding: 0;
     }
     .flex-texte2
@@ -685,17 +694,8 @@ footer
 } 
 @media screen and (max-width: 915px)
 {
-/* adaptation nav */
-     .lien1
-     {
-         padding-right: 95px;
-         width: 50%;
-     }
-     .lien2
-     {
-         padding-right: 95px;
-         width: 50%;
-     }
+/* navigateur */
+    
 /* Activites Marseille */
         .grandposition-activite2
     {
@@ -716,12 +716,17 @@ footer
     {
         align-items: center;
         padding: 0;
+        margin: 0;
     }
     .padding-l
     {
         padding-left: 20px;
     }
 /* taille police */
+    h1
+    {
+        font-size: 23px;
+    }
     h2
     {
         font-size: 18px;
@@ -732,14 +737,15 @@ footer
     }
     p
     {
-        font-size: 14px;
+        font-size: 16px;
     }
 /* L'en-tete*/
     nav
     {
         flex-direction: column;
         margin-bottom: 40px;
-        padding: 0;   
+        padding: 0;
+        font-size: 17px;   
     }
     .center-logo
     {
@@ -773,8 +779,9 @@ footer
         padding-bottom: 20px;
         align-items: center;
         border-top: none;
-        border-bottom: 5px solid #F2F2F2;
+        border-bottom: 5px solid #0065FC;
         padding-right: 0;
+        text-align: center; 
     }
 
     .lien2
@@ -802,10 +809,41 @@ footer
         padding: 0px 10px 10px 15px;
         
     }
-/* Icone barre de recherche */
+/* Icone*/
+   
+    .fa-money-bill-wave:before
+    {
+        font-size: 19px;
+    }
+    .fa-child:before
+    {
+        font-size: 19px;
+    }
+    .fa-heart:before
+    {
+        font-size: 19px;
+    }
+    .fa-dog:before
+    {
+        font-size: 19px;
+    }
+
+/*Barre de recherche */    
     header
     {
         padding: 0;
+    }
+    input
+    {
+        font-size: 17px;
+    }
+    .fa-map-marker-alt:before
+    {
+        font-size: larger;
+    }
+    .fa-search:before
+    {
+        font-size: larger;
     }
     .boutonsearch
     {
@@ -813,9 +851,19 @@ footer
     }
     .fondbleu
     {
-        padding-right: 0;
-        width: 85%;
-        border-radius: 11px 11px 11px 11px;
+        padding: 16px;
+        border-radius: 14px;
+        margin-left: -10px;
+        height: 49px;
+    }
+    .iconesearch
+    {
+        width: 48px;
+        height: 49px;
+    }
+    .zonederecherche
+    {
+        height: 47px;
     }
     .none-search
     {
@@ -832,10 +880,14 @@ footer
         align-items: baseline;
         padding-left: 15px;
     }
+    .padding-filtre
+    {
+        font-size: 16px;
+    }
 
     .block-filtre
     {
-        margin: 5px 10px 10px 0;
+        margin: 5px 5px 8px 0;
     }
     .info
     {
@@ -845,6 +897,7 @@ footer
     .filtre-mobile
     {
         padding: 0 0 10px 5px;
+        font-size: 16px;
     }
     .lesfiltres2
     {
@@ -907,10 +960,6 @@ footer
     {
         padding-right: 20px;   
     }
-    .marg-pop
-    {
-        margin: 10px;
-    }
     .cadrepopulaire
     {
         padding: 15px 0px 20px 0px;
@@ -919,13 +968,11 @@ footer
     {
         white-space: nowrap;
         font-size: smaller;
-        padding-top: 50px;
     }
     .ligne-etoilepop2
     {
         white-space: nowrap;
         font-size: smaller;
-        padding-top: 30px;
     }
 /* Activites a Marseille */
     #bloc2
@@ -1025,7 +1072,6 @@ footer
     footer
     {
         padding-left: 30px;
-        height: 350px;
     }
     .text-footer
     {
