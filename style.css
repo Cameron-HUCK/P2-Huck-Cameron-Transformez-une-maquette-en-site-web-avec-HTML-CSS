@@ -60,7 +60,7 @@ body
     padding-right: 20px;
 }
 
-/* Taille de texte*/
+/* Taille et regle de texte */
 
 h1
 {
@@ -193,17 +193,12 @@ form
 
 input
 {
-    width: 95%;
+    width: 100%;
     height: 40px;
     border-style: none;
     font-size: 15px;
 }
 
-button
-{
-    background-color: #0065FC;
-    color: white;
-}
 
 .fondbleu
 {
@@ -450,6 +445,7 @@ button
 .photo-populaire
 {
     width: 40%;
+    min-width: 40%;
     border-radius: 15px 0px 0px 15px;
     object-fit: cover;
     object-position: center;
@@ -610,11 +606,20 @@ footer
 {
     padding-right: 215px;
 }
+/* Calibrage du fond blanc */
 
+@media screen and (max-width: 1078px) 
+{
+    
+    .fond-blanc
+    {
+        height: 225px;
+    }
+}
 
 /* Responsive tablette */
 
-@media screen and (max-width: 992px)
+@media screen and (max-width: 991px)
 {
 
 /* Taille de Police */
@@ -681,11 +686,6 @@ footer
     {
         height: 230px;
         margin: 20px 0px 30px 0px;
-    }
-
-    .fond-blanc
-    {
-        height: 225px;
     }
 
     .text-gras
@@ -768,7 +768,7 @@ footer
 
 /* Responsive Mobile */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 767px)
 {
     body
     {
