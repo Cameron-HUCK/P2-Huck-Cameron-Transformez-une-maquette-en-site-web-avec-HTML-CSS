@@ -60,7 +60,7 @@ body
     padding-right: 20px;
 }
 
-/* Taille et regle de texte */
+/* Taille de texte*/
 
 h1
 {
@@ -199,6 +199,11 @@ input
     font-size: 15px;
 }
 
+button
+{
+    background-color: #0065FC;
+    color: white;
+}
 
 .fondbleu
 {
